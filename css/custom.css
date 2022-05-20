@@ -185,7 +185,7 @@ span {
   }
 }
 .banner .cursive-text {
-  padding-top: 10%;
+  padding-top: 15%;
   color: yellow;
   font-size: 4.5rem;
   font-weight: 100;
@@ -1346,5 +1346,7 @@ span {
           transform: translate(-50%, -50%);
 }
 .btf-txt img {
-  width: 200px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 }
