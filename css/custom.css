@@ -146,8 +146,8 @@ span {
   height: 105vh;
   width: 100%;
   background: rgba(255, 255, 255, 0.075);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, rgba(0, 0, 0, 0.33)), to(#283125)), url(../img/SeniorCitizen.jpg) center / cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.33) 46%, #283125 100%), url(../img/SeniorCitizen.jpg) center / cover;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, rgba(0, 0, 0, 0.33)), to(#000)), url(../img/SeniorCitizen.jpg) center / cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.33) 46%, #000 100%), url(../img/SeniorCitizen.jpg) center / cover;
 }
 @media only screen and (max-width: 480px) {
   .banner {
@@ -190,7 +190,7 @@ span {
   font-size: 4.5rem;
   font-weight: 100;
   line-height: 5rem;
-  font-family: 'Kristi', cursive !important;
+  font-family: 'Great Vibes', cursive !important;
   display: inline-block;
 }
 @media only screen and (max-width: 769px) {
