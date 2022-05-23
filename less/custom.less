@@ -1343,7 +1343,11 @@ span {
     @media screen and (max-width:480px) {
         padding-top: 5rem;
     }
-
+    a{
+        &:hover{
+            color: @secendary-text-color !important;
+        }
+    }
 }
 
 .footer img {
@@ -1375,7 +1379,17 @@ span {
     padding: 0px;
     text-align: center;
     line-height: 35px;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        flex-basis: 48%;
+        width: 48%;
+        text-align: left;
+       
+        
+    }
     @media screen and (max-width:480px) {
         display: flex;
         flex-wrap: wrap;
@@ -1697,7 +1711,7 @@ span {
 // ========================preloader end==========================
 .btf-txt {
     img {
-        width: 300px;
+        width: 600px;
         display: block;
         margin: 0 auto;
     }
@@ -1709,4 +1723,10 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mfp-img{
+    width: 1200px !important;
+    object-fit: cover;
+
 }
