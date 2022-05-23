@@ -93,13 +93,16 @@ span {
     font-size: 15px;
     display: inline-block;
 }
-.cta{
-   display: inline-block;
+
+.cta {
+    display: inline-block;
 }
+
 .db {
     background-color: rgb(255, 202, 56);
     color: #000;
 }
+
 .diagonal {
     position: relative;
     // line-height: 50px;
@@ -166,7 +169,9 @@ span {
     height: 105vh;
     width: 100%;
     background: rgba(255, 255, 255, 0.075);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.33) 74%, #2a2e2f27 100%), url(../img/SeniorCitizen.jpg) center / cover;
+    // background: linear-gradient(180deg, rgba(0, 0, 0, 0.33) 46%, #000 100%), url(../img/SeniorCitizen.jpg) center / cover;
+    background:radial-gradient(circle, #0000006b 48%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%), url(../img/SeniorCitizen.jpg) center / cover;
+    position: relative;
 
     // background: linear-gradient(180deg, rgba(0, 0, 0, 0.766) 0%, rgba(255,255,255,0) 17%, rgba(255, 255, 255, 0) 71%, rgba(5,87,130,1) 100%), url("../img/banner.jpeg") center/cover;
     @media only screen and (max-width:480px) {
@@ -181,10 +186,26 @@ span {
             color: #fff;
 
             &:hover {
-                color: @secondary-color  !important;
+                color: yellow;
             }
         }
     }
+    .banner-text {
+        position: relative;
+        z-index: 2;
+      
+        
+    }
+    // .ban-box {
+    //     height: 50vh;
+    //     width: 55vw;
+    //     position: absolute;
+    //     background-color: rgba(0, 0, 0, 0.469);
+    //     transform: translate(-50%, -50%);
+    //     top: 50%;
+    //     left: 50%;
+    //     z-index: 1;
+    // }
 
     @media only screen and (max-width:480px) {
         .banner-text {
@@ -213,12 +234,12 @@ span {
     }
 
     .cursive-text {
-        padding-top: 10%;
+        padding-top: 15%;
         color: yellow;
         font-size: 4.5rem;
         font-weight: 100;
         line-height: 5rem;
-        font-family: 'Kristi', cursive !important;
+        font-family: 'Great Vibes', cursive !important;
         //    margin: -6%;
         display: inline-block;
 
@@ -286,9 +307,16 @@ span {
     .me-2 {
         width: 150px;
     }
-
+   
 }
-
+.navbar-collapse{
+    .btn-primary {
+      
+        padding: 11px 13px !important;
+        white-space: nowrap !important;
+        
+    }
+}
 .navbar-toggler-icon {
     color: #fff;
     font-size: 30px;
@@ -308,7 +336,9 @@ span {
         }
     }
 }
-
+.bi{
+    margin:  0 auto;
+}
 .fixed-nav {
     .navbar-brand {
         .logo {
@@ -393,12 +423,13 @@ span {
     }
 
     .about-img img {
-        width: 325px;
-        height: 415px;
+        width: 420px;
+        height: 525px;
+        border-radius: 15px;
         object-fit: cover;
         margin: 0 0 0 20%;
         display: block;
-        transform: rotate(8deg);
+        // transform: rotate(8deg);
         position: relative;
         transition: all .3s;
         z-index: 2;
@@ -406,7 +437,7 @@ span {
         @media only screen and (max-width:769px) {
             width: 270px;
             height: 400px;
-            transform: rotate(4deg);
+            // transform: rotate(4deg);
             margin: 0 0 0 2%;
         }
 
@@ -1665,9 +1696,17 @@ span {
 
 // ========================preloader end==========================
 .btf-txt {
-   img{
-       width:200px;
-   }
+    img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
 
 
+}
+
+.two-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

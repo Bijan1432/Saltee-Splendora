@@ -146,8 +146,8 @@ span {
   height: 105vh;
   width: 100%;
   background: rgba(255, 255, 255, 0.075);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, rgba(0, 0, 0, 0.33)), to(#000)), url(../img/SeniorCitizen.jpg) center / cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.33) 46%, #000 100%), url(../img/SeniorCitizen.jpg) center / cover;
+  background: radial-gradient(circle, #0000006b 48%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%), url(../img/SeniorCitizen.jpg) center / cover;
+  position: relative;
 }
 @media only screen and (max-width: 480px) {
   .banner {
@@ -158,7 +158,11 @@ span {
   color: #fff;
 }
 .banner .nav-bar-custom a:hover {
-  color: #000000 !important;
+  color: yellow;
+}
+.banner .banner-text {
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (max-width: 480px) {
   .banner .banner-text {
@@ -241,6 +245,10 @@ span {
 .fixed-nav .me-2 {
   width: 150px;
 }
+.navbar-collapse .btn-primary {
+  padding: 11px 13px !important;
+  white-space: nowrap !important;
+}
 .navbar-toggler-icon {
   color: #fff;
   font-size: 30px;
@@ -256,6 +264,9 @@ span {
   .navbar-brand .logo {
     height: 65px;
   }
+}
+.bi {
+  margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
   .fixed-nav .navbar-brand .logo {
@@ -319,14 +330,13 @@ span {
   }
 }
 .about .about-img img {
-  width: 325px;
-  height: 415px;
+  width: 420px;
+  height: 525px;
+  border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 0 0 20%;
   display: block;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -336,8 +346,6 @@ span {
   .about .about-img img {
     width: 270px;
     height: 400px;
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
     margin: 0 0 0 2%;
   }
 }
